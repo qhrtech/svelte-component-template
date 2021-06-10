@@ -1,6 +1,6 @@
-import App from './App.svelte';
+import Component from './Component.svelte';
 
-const app = new App({
+const app = new Component({
 	target: document.body,
 	props: {
 		name: 'world'
