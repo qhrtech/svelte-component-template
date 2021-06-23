@@ -12,6 +12,8 @@
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "lint": "eslint src/**/*",
     "lint-fix": "eslint src/**/* --fix",
+    "prettier": "prettier --check \"src/**/*.{svelte,ts,js,json}\"",
+    "prettier-fix": "prettier --write \"src/**/*.{svelte,ts,js,json}\"",
     "test": "jest src",
     "test:watch": "npm run test -- --watch"
   },
