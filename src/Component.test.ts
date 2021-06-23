@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom';
 
-import { render, fireEvent } from '@testing-library/svelte';
+import { act, render, fireEvent } from '@testing-library/svelte';
 
 import Component from './Component.svelte';
 
@@ -36,7 +36,8 @@ test('has input', async () => {
 
   // If needed you can set components.
   // This should be only used if there is not a better option.
-  await component.$set({ value: 2 });
+  // wrapping in act due to linting. await is need for re-render.
+  await act(() => component.$set({ value: 2 }));
   expect(input).toHaveValue(2);
   expect(input).toHaveClass('red-input');
 });
