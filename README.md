@@ -33,7 +33,7 @@ If you're using [Visual Studio Code](https://code.visualstudio.com/) we recommen
 ## Lint and Style Checking
 
 ### [Prettier](https://prettier.io/)
-* An opinionated code formatter for svelte, typescript, javascript and json. 
+> An opinionated code formatter for svelte, typescript, javascript and json. 
 * Developers shgould setup to run on save in your editor. https://prettier.io/docs/en/editors.html
 
 To check manually:
@@ -49,7 +49,7 @@ npm run prettier-fix
 Svelte support is provided by prettier-plugin-svelte and config is prettier.config.js.
 
 ### [ESLint](https://eslint.org/)
-* ESLint statically analyzes your code to quickly find problems.
+> ESLint statically analyzes your code to quickly find problems.
 
 To run:
 ```bash
@@ -61,7 +61,7 @@ To apply fixes:
 npm run lint-fix
 ```
 
-Svelte support is provided by eslint-plugin-svelte3 and config is eslintrc.js.
+* Svelte support is provided by eslint-plugin-svelte3 and config is eslintrc.js.
 
 ### Svelte Check
 * Unused CSS
@@ -93,12 +93,12 @@ npm run coverage
 ```
 
 ### [Testing Library](https://testing-library.com/)
-* Simple and complete testing utilities that encourage good testing practices
+> Simple and complete testing utilities that encourage good testing practices
 * Svelte tests mostly uses the API from [DOM Testing Library](https://testing-library.com/docs/dom-testing-library/api)
 * Svelte has a few extenstions that allow access to the svelte component. [Svelte Testing Library](https://testing-library.com/docs/svelte-testing-library/api)
 * The biggest difference is the need to use `await` for events.
-> fireEvent is an async method when imported from @testing-library/svelte. This is because it calls tick which tells Svelte to apply any new changes to the DOM.
+  > fireEvent is an async method when imported from @testing-library/svelte. This is because it calls tick which tells Svelte to apply any new changes to the DOM.
 
 ### [Jest](https://jestjs.io/)
-* Jest is a delightful JavaScript Testing Framework with a focus on simplicity.
+> Jest is a delightful JavaScript Testing Framework with a focus on simplicity.
 * Here is a cheatsheet [Jest cheatsheet](https://devhints.io/jest)

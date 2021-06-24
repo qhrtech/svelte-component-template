@@ -5,7 +5,6 @@
   export let value = 0;
 </script>
 
-"
 <div>
   <label for={id}>{label}</label>
   <input {id} class="red-input" {type} {value} size="1" />
