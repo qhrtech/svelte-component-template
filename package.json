@@ -1,6 +1,7 @@
 {
 	"name": "component-template",
 	"version": "0.0.1",
+	"svelte": "src/lib/index.ts",
 	"scripts": {
 		"dev": "svelte-kit dev",
 		"package": "svelte-kit package",
