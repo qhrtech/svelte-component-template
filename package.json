@@ -4,6 +4,9 @@
 	"scripts": {
 		"dev": "svelte-kit dev",
 		"package": "svelte-kit package",
+		"sync": "svelte-kit sync",
+		"postinstall": "npm run sync",
+		"publish:local": "npm publish ./package --registry http://localhost:4873",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
